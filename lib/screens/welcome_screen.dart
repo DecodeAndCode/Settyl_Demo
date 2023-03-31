@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:settyl_demo/screens/googlemaps_screen.dart';
 import 'package:settyl_demo/screens/login_screen.dart';
 import 'package:settyl_demo/screens/registration_screen.dart';
 import 'package:settyl_demo/components/rounded_button.dart';
@@ -99,7 +100,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               colour: Colors.blueGrey,
               title: 'Continue As Guest',
               onPressed: () {
-                Navigator.pushNamed(context, RegistrationScreen.id);
+                Navigator.pushNamed(context, GoogleMapsScreen.id);
               },
             ),
           ],

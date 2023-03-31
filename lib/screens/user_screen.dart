@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:settyl_demo/screens/googlemaps_screen.dart';
+import 'package:settyl_demo/screens/polygone_screen.dart';
+
+import '../components/rounded_button.dart';
 
 class UserScreen extends StatefulWidget {
   static const String id = 'user_screen';
@@ -44,7 +48,30 @@ class _UserScreenState extends State<UserScreen> {
               child: Text('User Details'),
             ),
             Center(
-              child: const Text('Location'),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: RoundedButton(
+                      colour: Colors.lightBlueAccent,
+                      title: 'Get Location',
+                      onPressed: () {
+                        Navigator.pushNamed(context, GoogleMapsScreen.id);
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: RoundedButton(
+                      colour: Colors.lightBlueAccent,
+                      title: 'Get Polygon',
+                      onPressed: () {
+                        Navigator.pushNamed(context, PolygoneScreen.id);
+                      },
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

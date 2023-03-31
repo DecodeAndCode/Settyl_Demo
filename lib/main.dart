@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:settyl_demo/screens/googlemaps_screen.dart';
+import 'package:settyl_demo/screens/polygone_screen.dart';
 import 'package:settyl_demo/screens/user_screen.dart';
 import 'package:settyl_demo/screens/welcome_screen.dart';
 import 'package:settyl_demo/screens/login_screen.dart';
 import 'package:settyl_demo/screens/registration_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const DemoApp());
@@ -24,6 +26,8 @@ class DemoApp extends StatelessWidget {
         RegistrationScreen.id: (context) => RegistrationScreen(),
         LoginScreen.id: (context) => LoginScreen(),
         UserScreen.id: (context) => UserScreen(),
+        GoogleMapsScreen.id: (context) => GoogleMapsScreen(),
+        PolygoneScreen.id: (context) => PolygoneScreen(),
       },
     );
   }
