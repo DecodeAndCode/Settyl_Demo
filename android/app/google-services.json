@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "399872265258",
+    "project_id": "settyl-demo",
+    "storage_bucket": "settyl-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399872265258:android:883feff75af38bf2c38753",
+        "android_client_info": {
+          "package_name": "com.example.settyl_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399872265258-28svd5429gpoc1s7tkj1hns2gkhluvgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABV61slmZyIdZkCiWIQrBd264PVVmzZ7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399872265258-28svd5429gpoc1s7tkj1hns2gkhluvgi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
