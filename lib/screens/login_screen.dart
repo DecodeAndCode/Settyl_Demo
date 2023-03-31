@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:loading_overlay/loading_overlay.dart';
-import 'package:settyl_demo/constants.dart';
-import 'package:settyl_demo/rounded_button.dart';
-import 'package:settyl_demo/user_screen.dart';
+import 'package:settyl_demo/constants/constants.dart';
+import 'package:settyl_demo/components/rounded_button.dart';
+import 'package:settyl_demo/screens/user_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String id = 'login_screen';
@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   email = value;
                 },
                 decoration:
-                    kTextFieldDecoration.copyWith(hintText: 'Enter your email'),
+                    kTextFieldDecoration.copyWith(hintText: 'Enter Your Email'),
               ),
               const SizedBox(
                 height: 8.0,
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   password = value;
                 },
                 decoration: kTextFieldDecoration.copyWith(
-                    hintText: 'Enter your password'),
+                    hintText: 'Enter Your Password'),
               ),
               const SizedBox(
                 height: 24.0,

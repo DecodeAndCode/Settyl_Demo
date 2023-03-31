@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:settyl_demo/login_screen.dart';
-import 'package:settyl_demo/registration_screen.dart';
-import 'package:settyl_demo/rounded_button.dart';
+import 'package:settyl_demo/screens/login_screen.dart';
+import 'package:settyl_demo/screens/registration_screen.dart';
+import 'package:settyl_demo/components/rounded_button.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -30,14 +30,6 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
     animation2 = ColorTween(begin: Colors.lightBlue, end: Colors.white)
         .animate(controller);
-
-    // animation.addStatusListener((status) {
-    //   if (status == AnimationStatus.completed) {
-    //     controller.reverse(from: 1.0);
-    //   } else if (status == AnimationStatus.dismissed) {
-    //     controller.forward();
-    //   }
-    // });
 
     controller.addListener(() {
       setState(() {});
@@ -105,7 +97,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
             ),
             RoundedButton(
               colour: Colors.blueGrey,
-              title: 'Continue as Guest',
+              title: 'Continue As Guest',
               onPressed: () {
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:settyl_demo/user_screen.dart';
-import 'package:settyl_demo/welcome_screen.dart';
-import 'package:settyl_demo/login_screen.dart';
-import 'package:settyl_demo/registration_screen.dart';
+import 'package:settyl_demo/screens/user_screen.dart';
+import 'package:settyl_demo/screens/welcome_screen.dart';
+import 'package:settyl_demo/screens/login_screen.dart';
+import 'package:settyl_demo/screens/registration_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async{
